@@ -2,4 +2,8 @@
 # https://help.github.com/articles/ignoring-files
 # Example .gitignore files: https://github.com/github/gitignore
 /bower_components/
+<<<<<<< HEAD
 /node_modules/
+=======
+/node_modules/
+>>>>>>> 016ec91441630d1a5c74761086649f282a770ac0
