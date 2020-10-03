@@ -20,10 +20,28 @@
             box-sizing: border-box;
         }
 
-        #rain_video {
+        .stemning_video {
             object-fit: cover;
             width: 100%;
             height: 35vh;
+            border: none;
+        }
+
+        #kaffe_stemnings_video {
+            object-position: top;
+        }
+
+        .opskrift_img {
+            height: 250px;
+            width: 250px;
+            object-fit: cover;
+
+        }
+
+        .opskrift_text {
+            background-color: #E7F2D1;
+            max-width: 42vw;
+            margin: 0 auto
         }
 
     </style>
@@ -31,16 +49,16 @@
 
 <body>
 
-    <div class="container-fluid">
+    <div class="container-fluid" style="background-color: #F7E9E5">
 
         <!-- OVERSKRIFT -->
-        <div class="row text-center">
-            <h1>OVERSKRIFT</h1>
+        <div class="row text-center mb-5">
+            <h1>SNUP DIN KAFFEFLØDE <br> AND LET THE GAME BEGIN!</h1>
         </div>
 
         <!-- UNDEROVERSKRIFT -->
-        <div class="row text-center">
-            <h3>UNDEROVERSKRIFT</h3>
+        <div class="row text-center mb-4">
+            <h3>Gå op opdagelse i køkkenet...</h3>
         </div>
 
 
@@ -49,19 +67,90 @@
         <!-- KASSE MED OVERSKRIFT, VIDEO OG OPSKRIFTER -->
         <!-- OVERSKRIFT 1 -->
         <div class="row text-left">
-            <h2>RUBRIK</h2>
+            <h2>Når vejret er gråt...</h2>
         </div>
         <!-- STEMNINGSVIDEO -->
         <div class="row">
-            <video id="rain_video" src="videos/stemning_regn.mp4" autoplay loop muted></video>
+            <video class="stemning_video" src="videos/stemning_regn.mp4" autoplay loop muted></video>
 
         </div>
 
         <!-- OPSKRIFTERNE -->
-        <div class="row row-cols-md-3">
-            <div class="" style="background-color: red; height: 20vh"></div>
-            <div class="" style="background-color: blue; height: 20vh"></div>
-            <div class="" style="background-color: green; height: 20vh"></div>
+        <div class="row row-cols-md-3 text-center">
+            <div class="my-4 px-md-4" style="">
+                <img class="rounded-circle opskrift_img" src="imgs/varmkakao.jpg" alt="Varm kakao med flødeskum">
+                <p class="opskrift_text mt-3">Varm kako med lakris <br>
+                    og hvid chokolade</p>
+            </div>
+            <div class="my-md-4 px-md-4">
+                <img class="rounded-circle opskrift_img" src="imgs/kanelsnegle.jpg" alt="Varm kakao med flødeskum">
+                <p class="opskrift_text mt-3">Kanelsnegle med <br>
+                    cremet saltkaramel-drizzle</p>
+            </div>
+            <div class="my-4 px-md-4">
+                <img class="rounded-circle opskrift_img" src="imgs/gulerrodssuppe.jpg" alt="Varm kakao med flødeskum">
+                <p class="opskrift_text mt-3">Gulerodssuppe, som <br>
+                    varmer hele hjertet</p>
+            </div>
+        </div>
+
+        <!-- slut KASSE MED OVERSKRIFT, VIDEO OG OPSKRIFTER -->
+
+        <!-- KASSE MED OVERSKRIFT, VIDEO OG OPSKRIFTER -->
+        <!-- OVERSKRIFT 1 -->
+        <div class="row text-left">
+            <h2>Til de morgenfriske...</h2>
+        </div>
+        <!-- STEMNINGSVIDEO -->
+        <div class="row">
+            <video id="kaffe_stemnings_video" class="stemning_video" src="videos/Steaming%20Tea%20Cup.mp4" autoplay loop muted></video>
+
+        </div>
+
+        <!-- OPSKRIFTERNE -->
+        <div class="row row-cols-md-3 text-center">
+            <div class="my-4 px-md-4" style="">
+                <img class="rounded-circle opskrift_img" src="imgs/kaffe.jpg" alt="Varm kakao med flødeskum">
+                <p class="opskrift_text mt-3">Sydkoreanske Dalgona kaffe, <br> med et twist af karamel eller lakrids,
+                    og hvid chokolade</p>
+            </div>
+            <div class="my-md-4 px-md-4">
+                <img class="rounded-circle opskrift_img" src="imgs/passionssmoothi.jpg" alt="Varm kakao med flødeskum">
+                <p class="opskrift_text mt-3">Cremet smoothie med mango, <br> passionsfrugt og mynte</p>
+            </div>
+            <div class="my-4 px-md-4">
+                <img class="rounded-circle opskrift_img" src="imgs/pandekager.jpg" alt="Varm kakao med flødeskum">
+                <p class="opskrift_text mt-3"> Pandekager med passion og mango sorbet</p>
+            </div>
+        </div>
+
+        <!-- slut KASSE MED OVERSKRIFT, VIDEO OG OPSKRIFTER -->
+
+        <!-- KASSE MED OVERSKRIFT, VIDEO OG OPSKRIFTER -->
+        <!-- OVERSKRIFT 1 -->
+        <div class="row text-left">
+            <h2>Aftensmad på 20 min...</h2>
+        </div>
+        <!-- STEMNINGSVIDEO -->
+        <div class="row">
+            <video class="stemning_video" src="videos/madlavning_steming.mp4" autoplay loop muted></video>
+
+        </div>
+
+        <!-- OPSKRIFTERNE -->
+        <div class="row row-cols-md-3 text-center">
+            <div class="my-4 px-md-4" style="">
+                <img class="rounded-circle opskrift_img" src="imgs/Paprika-gryde.jpg" alt="Varm kakao med flødeskum">
+                <p class="opskrift_text mt-3">Paprikagryde med oksekød</p>
+            </div>
+            <div class="my-md-4 px-md-4">
+                <img class="rounded-circle opskrift_img" src="imgs/carbonara.jpg" alt="Varm kakao med flødeskum">
+                <p class="opskrift_text mt-3">Fyldig spaghetti carbonára</p>
+            </div>
+            <div class="my-4 px-md-4">
+                <img class="rounded-circle opskrift_img" src="imgs/Kylling-i-paprika-fl%C3%B8desovs-med-solt%C3%B8rrede-tomater-high-10.jpg" alt="Varm kakao med flødeskum">
+                <p class="opskrift_text mt-3"> Kylling i paprika flødesovs med spinat</p>
+            </div>
         </div>
 
         <!-- slut KASSE MED OVERSKRIFT, VIDEO OG OPSKRIFTER -->
