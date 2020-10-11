@@ -64,7 +64,8 @@ p {
     font-family: montserrat, sans-serif;
     font-style: normal;
     font-weight: 100;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    line-height: 25px;
 }
 
 /* SLUT typogafi */
@@ -77,8 +78,13 @@ p {
 #videoBG {
     /*        position: fixed;*/
     z-index: -1;
+    max-height: 100vh;
+    object-fit: cover;
+    height: 100vh;
+
 }
 
+/*
 @media (min-aspect-ratio: 16/9) {
     #videoBG {
         width: 100%;
@@ -101,9 +107,37 @@ p {
         height: 80vh;
         width: 100vw;
     }
+*/
 }
 
 /* SLUT SPLASH */
+
+/* god energi */
+
+@media only screen and (min-width: 768px) {
+
+
+    #energi_container h1,
+    #energi_container h2 {
+        font-size: 5.5rem
+    }
+}
+
+@media only screen and (min-width: 1020px) {
+
+
+    #energi_container h1,
+    #energi_container h2 {
+        font-size: 5.6rem
+    }
+}
+
+.video_container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
 
 /* SMAGSVARIANTER */
 #smags_varianter {
@@ -114,7 +148,9 @@ p {
 
 .smagsvariant_img {
     width: 70%;
-    margin: 0 auto
+    margin: 0 auto;
+
+
 }
 
 .karamel {
@@ -167,6 +203,7 @@ footer {
     display: grid;
     align-items: center;
     justify-content: center;
+    box-shadow: -1px -14px 10px -21px #111;
 }
 
 /* SLUT FOOTER */
