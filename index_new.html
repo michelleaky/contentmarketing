@@ -29,11 +29,16 @@
             }
         }
 
+        #TheBigContainer {
+            margin: 0;
+            padding: 0;
+        }
+
     </style>
 </head>
 
 <body>
-    <div class="container-fluid">
+    <div id="TheBigContainer" class="container-fluid">
 
         <!-- SPLASH START -->
         <video class="mb-5 col-12" id="videoBG" autoplay muted loop>
@@ -66,16 +71,20 @@
 
         <!-- GOD ENERGI START -->
         <section id="godEnergi">
-            <div id="energi_container" class="align-content-center px-5" style="height: 100vh; display: grid;">
-                <div class="row">
-                    <h1>God <br> energi <br> om <br> morgen,</h1>
-                </div>
-                <div class="row">
-                    <h2 style="border-bottom: 2px solid #7C94FB;">frisk fra start</h2>
+            <div id="energi_container" class="px-5" style="height: 100vh; display: grid; align-content: center;">
+                <div>
+                    <div class="row mt-3 ml-3">
+                        <h1>God <br> energi <br> om <br> morgen,</h1>
+                    </div>
+                    <div class="row ml-3 mb-3">
+                        <h2 style="border-bottom: 2px solid #7C94FB;">frisk fra start</h2>
+                    </div>
                 </div>
             </div>
 
-            <div class="row row-cols-md-2 d-md-flex flex-row-reverse">
+            <div class="row row-cols-md-2 d-md-flex flex-row-reverse" style=" display: flex;
+  justify-content: center;
+  align-items: center;">
                 <div>
                     <p class="p-5">Hvad er dine første tanker, når du hører alarmen ringe alt for tidligt om morgenen? Tænker du fuck eller tænker du rise and shine! Som en typisk ung med et travlt liv, når man ikke altid sine 7-8 nattetimer. På trods af dette, kan du stadig få en frisk og god morgen ved hjælp af vores kaffefløde. <br> <br>
                         Bare tag den med ro. Træk vejret dybt. Stræk armene så langt ud du kan. Slap helt af, og tag et skridt tilbage i køkkenet. Din nybryggede kaffe kalder på dig. Hæld lidt kaffefløde i. Enten neutral, eller med et twist af karamel. Din kop kaffe er nu lækker og eksklusiv, tak til kaffefløden, som kun koster 0,4 kr pr sjat.
@@ -83,7 +92,9 @@
                         Start din dag med vores kaffefløde og mærk den gode energi helt fra start. God kaffefløde giver gode morgener.
                     </p>
                 </div>
-                <div class="video_container">
+                <div class="video_container" style=" display: flex;
+  justify-content: center;
+  align-items: center;">
                     <video class="col-12 p-md-5" style="height: 80vh; object-fit: cover; " id="god_energi_video" autoplay muted loop>
                         <source src="videos/god_energi.mp4" type="video/mp4">
                     </video>
