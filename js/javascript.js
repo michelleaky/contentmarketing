@@ -1,10 +1,14 @@
 gsap.registerPlugin(ScrollTrigger);
+var rellax = new Rellax(".rellax", {
+    center: true,
+});
 
 console.log("jeg er her");
 
 const godEnergiContainer = document.querySelector("#energi_container");
 const godEnergiContainerDiver = document.querySelector("#energi_container > div");
 const diverIOverskud = document.querySelectorAll("#overskudIHverdagen > div");
+const vidsteDuAtSection = document.querySelector("#vidsteDuAtContainer");
 
 
 gsap.set("#energi_container", {
@@ -24,6 +28,17 @@ ScrollTrigger.create({
 });
 
 
+ScrollTrigger.create({
+    trigger: vidsteDuAtSection,
+    markers: true,
+    toggleClass: "colorbace",
+    duration: 2,
+    start: "top center",
+    end: "bottom 50%",
+    once: true,
+});
+
+
 
 //gsap.from(godEnergiContainerDiver, {
 //    x: -300,
@@ -36,9 +51,7 @@ ScrollTrigger.create({
 //        scub: true,
 //    }
 //})
-var rellax = new Rellax(".rellax", {
-    center: true,
-});
+
 
 gsap.from(diverIOverskud, {
     opacity: 0,
