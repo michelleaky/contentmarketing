@@ -33,6 +33,7 @@
             margin: 0;
             padding: 0;
         }
+
     </style>
 </head>
 
@@ -56,14 +57,20 @@
             </div>
 
             <div class="row row-cols-md-2 d-md-flex flex-row-reverse">
-                <div class="col-md-6">
+                <div class="col-md-6" style=" display: flex;
+  justify-content: center;
+  align-items: center; flex-direction: column;">
                     <p class="p-5">Hvad gør du, for at finde overskud i hverdagen? Eller har du en dårlig vane med, at køre på overtrætheden? Dine tanker er et stort rod, fordi du har en masse erinder at nå. <br> <br>Men alligevel, bruger du dagen foran fjernsynet. Er dette en dårlig samvittighedsfølelse, du kender til? Bare rolig, den kan du nemt komme af med.
                         <br> <br>
                         Bryg en kop kaffe. Om du bruger friskkværnet kaffe eller den instant kaffe som lige var på tilbud i netto. Med en sjat kaffefløde i, omvender du alle kaffer en ren luksuriøsitet. Så lækker en kop kaffe, at du finder energien frem.
                     </p>
 
                 </div>
-                <div class="col-md-6"></div>
+                <div class="col-md-6">
+                    <video class="mb-5 col-12 p-md-5" id="overskud_video" style="height: 80vh; object-fit: cover;" controls>
+                        <source src="videos/cm_video.mp4" type="video/mp4">
+                    </video>
+                </div>
             </div>
         </section>
         <!-- OVERSKUD I HVERDAGEN SLUT -->
@@ -71,14 +78,17 @@
         <!-- GOD ENERGI START -->
         <section id="godEnergi">
             <div id="energi_container" class="px-5" style="height: 100vh; display: grid; align-content: center;">
-                <div>
-                    <div class="row mt-3 ml-3">
-                        <h1>God <br> energi <br> om <br> morgen,</h1>
-                    </div>
-                    <div class="row ml-3 mb-3">
-                        <h2 style="border-bottom: 2px solid #7C94FB;">frisk fra start</h2>
-                    </div>
+
+                <div class="row mt-3 ml-3">
+                    <h1>God <br> energi <br> om <br> morgen,</h1>
                 </div>
+
+                <div class="row ml-3 mb-3" style="border-bottom: 2px solid #7C94FB;">
+                    <h2>frisk fra start</h2>
+                </div>
+
+
+
             </div>
 
             <div class="row row-cols-md-2 d-md-flex flex-row-reverse" style=" display: flex;
@@ -97,10 +107,13 @@
                     <video class="col-12 p-md-5" style="height: 80vh; object-fit: cover; " id="god_energi_video" autoplay muted loop>
                         <source src="videos/god_energi.mp4" type="video/mp4">
                     </video>
-                    <div class="row offset-1 mb-5 mt-5 rellax" data-rellax-speed="2">
-                        <h3>God kaffefløde giver gode morgener.</h3>
-                    </div>
+
                 </div>
+
+            </div>
+
+            <div class="row offset-1 mb-5 mt-5 rellax" data-rellax-speed="4">
+                <h3>God kaffefløde giver gode morgener.</h3>
             </div>
         </section>
         <!-- GOD ENERGI SLUT -->
@@ -324,4 +337,6 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.min.js" integrity="sha384-5h4UG+6GOuV9qXh6HqOLwZMY4mnLPraeTrjT5v07o347pj6IkfuoASuGBhfDsp3d" crossorigin="anonymous"></script>
     -->
-</body></html>
+</body>
+
+</html>
