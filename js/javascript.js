@@ -14,6 +14,9 @@ const demDerSkalPoppeUpHverdagspauser = document.querySelector = ("#hverdagensPa
 
 const demDerSkalPoppeUpGodsamvitighed = document.querySelector = ("#godSamvittighed > div");
 const demDerSkalPoppeUpVidste = document.querySelector = ("#vidsteDuAt > div");
+const demDerSkalPoppeUpSmag = document.querySelector = ("#smagsVarianer > div");
+
+
 
 
 
@@ -135,6 +138,20 @@ gsap.from(demDerSkalPoppeUpVidste, {
     stagger: 1,
     scrollTrigger: {
         trigger: "#vidsteDuAt",
+        start: "10% center",
+        end: "center center",
+        markers: true,
+        scrub: true,
+    }
+});
+
+gsap.from(demDerSkalPoppeUpSmag, {
+    opacity: 0,
+    y: 100,
+    duration: 2,
+    stagger: 1,
+    scrollTrigger: {
+        trigger: "#smagsVarianer",
         start: "10% center",
         end: "center center",
         markers: true,
