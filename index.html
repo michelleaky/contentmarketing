@@ -8,242 +8,407 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css" integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
-
     <link rel="stylesheet" href="style.css">
 
     <title>Kaffefløde</title>
+
+    <style>
+        .scale {
+            transform: scale(4);
+            transition: 0.5s;
+        }
+
+        .coloryellow {
+
+
+            animation-name: yellow;
+            animation-duration: 0.5s;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes yellow {
+
+
+            100% {
+                background-color: #FADA7A;
+            }
+        }
+
+        .colorbace {
+            animation-name: bace;
+            animation-duration: 0.5s;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes bace {
+
+
+            100% {
+                background-color: #FCF6F0;
+            }
+        }
+
+        #TheBigContainer {
+            margin: 0;
+            padding: 0;
+        }
+
+        .logo {
+            width: 30%
+        }
+    </style>
 </head>
 
 <body>
+    <div id="TheBigContainer" class="container-fluid">
 
-    <!-- SPLASH START -->
-    <div class="container-fluid">
-        <div id="splashContainer">
-            <div class="textSplash">
-                Slå blenderen til. Sæt kaffemaskinen over. Stil kogepladen på det høje blus. Mærk kreativiteten, mærk duftene og mærk nu overskuddet komme susende. Så fyld glasset med din yndlings aften-hygge-fest-drink. Og lad freden brede sig. Eller spark festen i gang. <br>Gå i krig.
+        <!-- SPLASH START -->
+
+        <video class="mb-5 col-12" id="videoBG" autoplay muted loop>
+            <source src="videos/SPLASH_STORY.mp4" type="video/mp4">
+        </video>
+
+        <div style="height: 100vh; display: flex;
+  justify-content: center;
+  align-items: center; position: absolute; top: 0; left: 0; right: 0; bottom: 0;">
+            <div style="display: flex; flex-direction: column;">
+                <img style="width: 50%; margin: 0 auto;" src="imgs/logo.svg">
+                <h2>COFFEE FRIENDS</h2>
             </div>
         </div>
 
-        <!-- BØLGER -->
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-            <path fill="#E7F2D1" fill-opacity="1" d="M0,192L60,165.3C120,139,240,85,360,96C480,107,600,181,720,192C840,203,960,149,1080,138.7C1200,128,1320,160,1380,176L1440,192L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path>
-        </svg>
 
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-            <path fill="#E7F2D1" fill-opacity="1" d="M0,96L48,117.3C96,139,192,181,288,192C384,203,480,181,576,176C672,171,768,181,864,208C960,235,1056,277,1152,266.7C1248,256,1344,192,1392,160L1440,128L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
-        </svg>
+        <!-- SPLASH SLUT -->
 
-
-        <!-- SPLASH slut -->
-
-        <!-- FAKTA OM VORES KAFFEFLØDE START -->
-
-        <!-- OVERSKRIFT -->
-        <div class="row text-center mb-3">
-            <h1>Hvad er kaffefløde?</h1>
-        </div>
-
-        <!-- UNDERRUBRIK -->
-        <div class="row text-center col-6 offset-3 mb-md-3">
-            <h2>Kaffefløde er en tynd flødetype og bruges traditionelt til at give mere fylde og smag end mælk kan give. </h2>
-        </div>
-
-        <!-- BRØDTEKST -->
-        <div class="row row-cols-md-2">
-            <div class="justify-content-center align-content-center " style="display: grid;">
-                <p class="p-5">Du kan med vores kaffefløde give din kaffe en fyldigere fornemmelse og afrunder smagen mere, end mælk gør. Eller noget helt tredje! Vores kaffefløde er skabt til, at kunne bruges til madlavning og endnu bedre til drinks! Så hvad venter du på? Spar din hverdag i gang med kaffefløde…</p>
+        <!-- OVERSKUD I HVERDAGEN START -->
+        <section id="overskudIHverdagen">
+            <div class="row text-center text-md-left ml-md-5">
+                <h1>OVERSKUD I <br> HVERDAGEN, </h1>
+            </div>
+            <div class="row text-center ml-5 text-md-left">
+                <h2>på karton </h2>
             </div>
 
-            <!-- BILLEDE -->
-            <div>
-                <img class="p-5" src="imgs/making_coffee.jpg" alt="Kaffe med kaffefløde">
-            </div>
-        </div>
 
-        <div class="row row-cols-md-2">
-            <div>
-                <img class="p-5" src="imgs/infografik_m%C3%A6lkefedtprocent.png" alt="Forskellen på de forskellige fløder">
-            </div>
-            <div class="justify-content-center align-content-center " style="display: grid;">
-                <h1>Men hvad er nu egentlig forskellen på de forskellige fløder?...</h1>
-                <p class="py-5">Kaffefløde indeholder kun 9% fedt, <br> hvorimod madlavningsfløde kan indeholde op til 18% <br> og piskefløde indeholder hele 38%.</p>
-            </div>
-        </div>
+            <div class="row mt-5">
+                <div class="col-12" style=" display: flex;
+  justify-content: center;
+  align-items: center; flex-direction: row;">
+                    <p class="m-2 pr-2" style="border-right: 2px solid #7C94FB">Overskud til dine drømme</p>
 
-        <!-- FAKTA SLUT slut -->
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-            <path fill="#E7F2D1" fill-opacity="1" d="M0,192L60,165.3C120,139,240,85,360,96C480,107,600,181,720,192C840,203,960,149,1080,138.7C1200,128,1320,160,1380,176L1440,192L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path>
-        </svg>
 
-        <!-- MØD VORES SMAGSVARIANTER START -->
-        <div id="voresSmage" class="container">
-            <h1>Mød vores smagsvarianter</h1>
-            <div class="row row-cols-md-2 mt-5  ">
-                <div class="col-12" style="text-align: center;"><img src="imgs/kaffeneurtral.png" alt="kaffefløde neutral" style="height:330px;width:250px;margin:0;"></div>
-                <div class="col-12 mt-5" style="max-width: 50ch;">
-                    <h2>Neutral</h2>
-                    <p>Neutral, men fin og delikat smag og følelse. Tilføjer en fløjlsagtig smagsoplevelse uanset hvilken ret den kombineres med. Tilføj eventuelt en smule mel under madlavningen inden fløden tilsættes. </p>
+                    <p class="m-2 pr-2" style="border-right: 2px solid #7C94FB">Tager din kaffe op på det niveau du fortjener</p>
+
+                    <p class="m-2">Find den gode energi</p>
                 </div>
+                <!--
+                    <p class="p-5">Hvad gør du, for at finde overskud i hverdagen? Eller har du en dårlig vane med, at køre på overtrætheden? Dine tanker er et stort rod, fordi du har en masse erinder at nå. <br> <br>Men alligevel, bruger du dagen foran fjernsynet. Er dette en dårlig samvittighedsfølelse, du kender til? Bare rolig, den kan du nemt komme af med.
+                        <br> <br>
+                        Bryg en kop kaffe. Om du bruger friskkværnet kaffe eller den instant kaffe som lige var på tilbud i netto. Med en sjat kaffefløde i, omvender du alle kaffer en ren luksuriøsitet. Så lækker en kop kaffe, at du finder energien frem.
+                    </p>
+-->
+
             </div>
-            <div class="row row-cols-md-2 flex-row-reverse mt-5">
-                <div class="col-12" style="text-align: center;"><img src="imgs/kaffekaramel.png" alt="kaffefløde neutral" style="height:330px;width:250px;margin:0"></div>
-                <div class="col-12 mt-5" style="max-width: 50ch;">
-                    <h2>Karamel</h2>
-                    <p>Verden er et rarere sted, når fløde og karamel blandes. En blød og mild smag til den behagelige smagsoplevelse. Tilføj eventuelt en smule havsalt, for at skabe et lækkert modspil til det søde. </p>
+            <div class="col-12">
+                <video class="mb-5 col-12 p-md-5" id="overskud_video" style="height: 90vh; object-fit: cover;" controls>
+                    <source src="videos/cm_video.mp4" type="video/mp4">
+                </video>
+            </div>
+
+        </section>
+        <!-- OVERSKUD I HVERDAGEN SLUT -->
+
+        <!-- GOD ENERGI START -->
+        <section id="godEnergi">
+            <div id="energi_container" class="px-5" style="height: 100vh; display: grid; align-content: center;">
+
+                <div class="row mt-3 ml-3">
+                    <h1>God <br> energi <br> om <br> morgen,</h1>
                 </div>
-            </div>
-            <div class="row row-cols-md-2 mt-5">
-                <div class="col-12" style="text-align: center;"><img src="imgs/kaffelakrids.png" alt="kaffefløde neutral" style="height:330px;width:250px;margin:0"></div>
-                <div class="col-12 mt-5" style="max-width: 50ch;">
-                    <h2>Lakrids</h2>
-                    <p>Den rette mængde lakrids tilføjet for give det nødvendige pift, uden at være for overvældende. Vær kreativ, nytænkende og se, hvor smagsoplevelserne tager dig hen. </p>
+
+                <div class="row ml-3 mb-3" style="border-bottom: 2px solid #7C94FB;">
+                    <h2>frisk fra start</h2>
                 </div>
+
+
+
             </div>
-            <div class="row row-cols-md-2 flex-row-reverse mt-5">
-                <div class="col-12 " style="text-align: center;"><img src="imgs/kaffepassion.png" alt="kaffefløde neutral" style="height:330px;width:250px;margin:0"></div>
-                <div class="col-12 mt-5" style="max-width: 50ch;">
-                    <h2>Passionsfrugt</h2>
-                    <p>Den syrlige passionsfrugt danner det perfekte modspil til den søde og dæmpede fløde. Når spidst og blødt går hånd i hånd. Find køkkenremedierne frem, mærk kreativiten og gå i krig med denne lækre kombination.
+
+            <div id="start1" class="row row-cols-md-2 d-md-flex flex-row-reverse popup" style=" display: flex;
+  justify-content: center;
+  align-items: center;">
+                <div>
+                    <p class="p-5">Hvad er dine første tanker, når du hører alarmen ringe alt for tidligt om morgenen? Tænker du fuck eller tænker du rise and shine! Som en typisk ung med et travlt liv, når man ikke altid sine 7-8 nattetimer. På trods af dette, kan du stadig få en frisk og god morgen ved hjælp af vores kaffefløde. <br> <br>
+                        Bare tag den med ro. Træk vejret dybt. Stræk armene så langt ud du kan. Slap helt af, og tag et skridt tilbage i køkkenet. Din nybryggede kaffe kalder på dig. Hæld lidt kaffefløde i. Enten neutral, eller med et twist af karamel. Din kop kaffe er nu lækker og eksklusiv, tak til kaffefløden, som kun koster 0,4 kr pr sjat.
+                        <br> <br>
+                        Start din dag med vores kaffefløde og mærk den gode energi helt fra start.
+                    </p>
+                </div>
+                <div class="video_container popup" style=" display: flex;
+  justify-content: center;
+  align-items: center; flex-direction: column;">
+                    <video class="col-12 p-md-5" style="height: 80vh; object-fit: cover; " id="god_energi_video" autoplay muted loop>
+                        <source src="videos/god_energi.mp4" type="video/mp4">
+                    </video>
+
+                </div>
+
+            </div>
+
+            <div class="row offset-1 mb-5 mt-5 rellax" data-rellax-speed="4">
+                <h3>God kaffefløde giver gode morgener.</h3>
+            </div>
+        </section>
+        <!-- GOD ENERGI SLUT -->
+
+        <!-- HVERDAGENS PAUSER START -->
+        <section id="hverdagensPauser">
+            <div class="row text-center text-md-right mr-md-5">
+                <h1>Hverdagens pauser,</h1>
+            </div>
+            <div class="row text-center ml-5 text-md-right mr-md-5 mb-5 ">
+                <h2>slip tankerne fri</h2>
+            </div>
+
+            <div class="row row-cols-md-2 ">
+                <div>
+                    <p class="p-5">Husker du at stoppe op? Husker du, at tage tid og ro? Få batterierne ladt op? Eller har du for travlt. Når du til dagens ende, inden du får set dig om. Inden du får levet fuldt.
+                        <br> <br>
+                        Løs dine frustrerede tanker. Forkæl hjernen, og du vil mærke en ro i kroppen. Forkæl kroppens sanser, og du vil mærke en ro i tankemønstret.
+                        <br> <br>
+                        Det er imponerende, hvor lidt der faktisk skal til. En halv times tid til sanserne. Lad dig mærke på råvarerne, lad dig dufte til osen, lad dig se en kulnarisk kreation blive skabt og lad dine smagsløg eksplodere. Giv tungen en fløjlsblød og cremet oplevelse den sent vil glemme med vores kaffefløde.
+                    </p>
+                </div>
+                <div class="row row-cols-2">
+                    <div class="rellax" data-rellax-speed="2">
+                        <img src="imgs/happy1.jpg">
+                    </div>
+                    <div class="rellax" data-rellax-speed="3">
+                        <img src="imgs/happy2.jpg">
+                    </div>
+                    <div class="row">
+                        <div style="margin-top: -300px;" class="rellax offset-5" data-rellax-speed="7">
+                            <img src="imgs/happy3.jpg">
+                        </div>
+                    </div>
+                    <div class="row mt-5">
+                        <div style="margin-top: -200px;" class="rellax" data-rellax-speed="3">
+                            <img src="imgs/happy4.jpg">
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </section>
+        <!-- HVERDAGENS PAUSER SLUT -->
+
+        <!-- GOD SAMVITIGHED START -->
+        <section id="godSamvittighed">
+            <div class="row text-center text-md-left ml-md-5">
+                <h1>God samvittighed,</h1>
+            </div>
+            <div class="row text-center text-md-left ml-md-3">
+                <h2 class="pl-5 ">giver ro i maven</h2>
+            </div>
+
+            <div class="row row-cols-md-2 mt-5 ">
+                <div class="wrapper" style=" display: flex; justify-content: center; align-items: center; flex-direction: column;">
+                    <div class="row offset-3 mb-1">
+                        <div class="infoCirkel fakta1 pulse"></div>
+                    </div>
+                    <div class="row mb-2" style="margin-right: 155px;">
+                        <div class="infoCirkel fakta2 pulse delay"></div>
+                    </div>
+                    <div>
+                        <img class="col-6 offset-3" src="imgs/kaffeneurtral.png">
+                    </div>
+                    <div class="row offset-3 mb-1">
+                        <div class="infoCirkel fakta3 pulse"></div>
+                    </div>
+                    <div class="row mb-2" style="margin-right: 155px;">
+                        <div class="infoCirkel fakta4 pulse delay"></div>
+                    </div>
+                </div>
+                <div>
+                    <p class="p-5">Gør verden til et grønnere sted. Små skridt er vejen frem. Lad os hjælpe dig på rette vej. <br> <br>
+
+                        Vi producerer emballage og kaffefløde med nul klimaaftryk.
+                        <br> <br>
+
+                        Udover pappen består emballagen også af en plastikprop og et tyndt lag plastik på indersiden. Men frygt ej, det er alt sammen lavet på 100% biobaseret materiale.
+                        Biobaseret plast er ikke produceret af fossile brændstoffer.
+
+                        <br> <br>Derimod er det baseret på sukkerrør eller organisk affald, som afleder et meget mindre CO2 aftryk.
+                        Bæredygtighed er det nye sort, så hjælp os i kampen mod klimaforandringer.
                     </p>
                 </div>
             </div>
-        </div>
+        </section>
+        <!-- GOD SAMVITIGHED SLUT -->
 
-        <!-- MØD VORES SMAGSVARIANTER SLUT -->
-
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-            <path fill="#F7E9E5" fill-opacity="1" d="M0,192L60,165.3C120,139,240,85,360,96C480,107,600,181,720,192C840,203,960,149,1080,138.7C1200,128,1320,160,1380,176L1440,192L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path>
-        </svg>
-
-        <!-- GÅ PÅ OPDAGELSE START  -->
-
-
-
-
-        <!-- OVERSKRIFT -->
-        <section id="gaaPaaOpdagelse">
-            <div class="row text-center mb-5">
-                <h1>SNUP DIN KAFFEFLØDE <br> AND LET THE GAME BEGIN!</h1>
-            </div>
-
-            <!-- UNDEROVERSKRIFT -->
-            <div class="row text-center mb-4">
-                <h2>Gå op opdagelse i køkkenet...</h2>
-            </div>
-
-
-
-
-            <!-- KASSE MED OVERSKRIFT, VIDEO OG OPSKRIFTER -->
-            <!-- OVERSKRIFT 1 -->
-            <div class="row text-left mt-5">
-                <h2>Når vejret er gråt...</h2>
-            </div>
-            <!-- STEMNINGSVIDEO -->
-            <div class="row">
-                <video class="stemning_video" src="videos/stemning_regn.mp4" autoplay loop muted></video>
-
-            </div>
-
-            <!-- OPSKRIFTERNE -->
-            <div class="row row-cols-md-3 text-center mt-5">
-                <div class="my-4 px-md-4" style="">
-                    <img class="rounded-circle opskrift_img" src="imgs/varmkakao.jpg" alt="Varm kakao med flødeskum">
-                    <p class="opskrift_text mt-3">Varm kako med lakris <br>
-                        og hvid chokolade</p>
+        <!-- VIDSTE DU AT START -->
+        <section id="vidsteDuAt ">
+            <div id="vidsteDuAtContainer">
+                <div class="row text-center text-md-left ml-md-5 mt-md-5 pt-md-5">
+                    <h1>Vidste du, at...</h1>
                 </div>
-                <div class="my-md-4 px-md-4">
-                    <img class="rounded-circle opskrift_img" src="imgs/kanelsnegle.jpg" alt="Varm kakao med flødeskum">
-                    <p class="opskrift_text mt-3">Kanelsnegle med <br>
-                        cremet saltkaramel-drizzle</p>
+                <div class="row text-center mt-2 text-md-left ml-md-5">
+                    <h3>Kaffefløde kan bruges i madlavning? </h3>
                 </div>
-                <div class="my-4 px-md-4">
-                    <img class="rounded-circle opskrift_img" src="imgs/gulerrodssuppe.jpg" alt="Varm kakao med flødeskum">
-                    <p class="opskrift_text mt-3">Gulerodssuppe, som <br>
-                        varmer hele hjertet</p>
+                <div class="row text-center mt text-md-left ml-md-5">
+                    <h2>SAY WHAT? </h2>
                 </div>
-            </div>
 
-            <!-- slut KASSE MED OVERSKRIFT, VIDEO OG OPSKRIFTER -->
+                <div class="row row-cols-md-2">
 
-            <!-- KASSE MED OVERSKRIFT, VIDEO OG OPSKRIFTER -->
-            <!-- OVERSKRIFT 1 -->
-            <div class="row text-left mt-5">
-                <h2>Til de morgenfriske...</h2>
-            </div>
-            <!-- STEMNINGSVIDEO -->
-            <div class="row">
-                <video id="kaffe_stemnings_video" class="stemning_video" src="videos/Steaming%20Tea%20Cup.mp4" autoplay loop muted></video>
+                    <div class="row">
 
-            </div>
+                        <p class="p-5 mb-0">Den er god nok! Kaffefløde indeholder kun 9% mælkefedt, hvilket gør kaffefløde til den perfekte universalle kaffefløde. <br> <br>Vi har gjort det nemt for dig! I sammenarbejde med nemlig.com nøje udvalgt nemme, billige og lækre opskrifter til dig, som har travlt i hverdagen! </p>
 
-            <!-- OPSKRIFTERNE -->
-            <div class="row row-cols-md-3 text-center mt-5">
-                <div class="my-4 px-md-4" style="">
-                    <img class="rounded-circle opskrift_img" src="imgs/kaffe.jpg" alt="Varm kakao med flødeskum">
-                    <p class="opskrift_text mt-3">Sydkoreanske Dalgona kaffe, <br> med et twist af karamel eller lakrids,
-                        og hvid chokolade</p>
-                </div>
-                <div class="my-md-4 px-md-4">
-                    <img class="rounded-circle opskrift_img" src="imgs/passionssmoothi.jpg" alt="Varm kakao med flødeskum">
-                    <p class="opskrift_text mt-3">Cremet smoothie med mango, <br> passionsfrugt og mynte</p>
-                </div>
-                <div class="my-4 px-md-4">
-                    <img class="rounded-circle opskrift_img" src="imgs/pandekager.jpg" alt="Varm kakao med flødeskum">
-                    <p class="opskrift_text mt-3"> Pandekager med passion og mango sorbet</p>
-                </div>
-            </div>
+                        <div class="row" style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
 
-            <!-- slut KASSE MED OVERSKRIFT, VIDEO OG OPSKRIFTER -->
+                            <a href="https://www.nemlig.com/">
+                                <div class="d-flex icon_mad" style="justify-content: center; align-items: center;">
+                                    <img class="mb-5" src="imgs/morgenmad.svg" style="width: 28%">
+                                    <p class="ml-2">Morgenmad</p>
 
-            <!-- KASSE MED OVERSKRIFT, VIDEO OG OPSKRIFTER -->
-            <!-- OVERSKRIFT 1 -->
-            <div class="row text-left mt-5">
-                <h2>Aftensmad på 20 min...</h2>
-            </div>
-            <!-- STEMNINGSVIDEO -->
-            <div class="row">
-                <video class="stemning_video" src="videos/madlavning_steming.mp4" autoplay loop muted></video>
+                                </div>
+                            </a>
+                            <a href="https://www.nemlig.com/">
+                                <div class="d-flex icon_mad" style="justify-content: center; align-items: center;">
+                                    <img class="mb-5" src="imgs/aftensmad.svg" style="width: 28%">
+                                    <p class="ml-2">Aftensmad</p>
+                                </div>
+                            </a>
+                            <a href="https://www.nemlig.com/">
+                                <div class="d-flex icon_mad" style="justify-content: center; align-items: center;">
+                                    <img class="mb-5" src="imgs/drinks.svg" style="width: 28%">
+                                    <p class="ml-2">Drinks</p>
+                                </div>
+                            </a>
 
-            </div>
+                        </div>
 
-            <!-- OPSKRIFTERNE -->
-            <div class="row row-cols-md-3 text-center mt-5">
-                <div class="my-4 px-md-4" style="">
-                    <img class="rounded-circle opskrift_img" src="imgs/Paprika-gryde.jpg" alt="Varm kakao med flødeskum">
-                    <p class="opskrift_text mt-3">Paprikagryde med oksekød</p>
-                </div>
-                <div class="my-md-4 px-md-4">
-                    <img class="rounded-circle opskrift_img" src="imgs/carbonara.jpg" alt="Varm kakao med flødeskum">
-                    <p class="opskrift_text mt-3">Fyldig spaghetti carbonára</p>
-                </div>
-                <div class="my-4 px-md-4">
-                    <img class="rounded-circle opskrift_img" src="imgs/Kylling-i-paprika-fl%C3%B8desovs-med-solt%C3%B8rrede-tomater-high-10.jpg" alt="Varm kakao med flødeskum">
-                    <p class="opskrift_text mt-3"> Kylling i paprika flødesovs med spinat</p>
+                    </div>
+
+                    <div class="row p-0">
+                        <video class="mb-5 col-12 col-md-10 offset-md-1" autoplay muted loop style="height: 80vh; object-fit: cover;">
+                            <source src="videos/vidsteDuAt.mp4" type="video/mp4">
+                        </video>
+                    </div>
                 </div>
             </div>
         </section>
+        <!-- VIDSTE DU AT SLUT -->
 
-        <!-- slut KASSE MED OVERSKRIFT, VIDEO OG OPSKRIFTER -->
+        <!-- MØD VORES SMAGSVARIANTER START -->
+        <section id="smagsVarianer">
+            <div class="row text-center pt-md-5">
+                <h1>Mød vores smagsvarianter</h1>
+            </div>
 
-        <!-- GÅ PÅ OPDAGELSE SLUT -->
+            <div class="row text-center ml-5">
+                <h2>flere forskellige smage</h2>
+            </div>
+
+            <div class="row text-center">
+                <p class="p-5 col-6 offset-3">Vi har forkælet jer! Vi har udviklet 3 smagsvarianter, som tager din madlavning op til et helt nyt niveau. Nemmere bliver det ikke!
+                </p>
+            </div>
+            <!--
+<div id="karamel" class="row" style="margin-bottom: 200px;">
+    <img class="offset-1" style="width: 7%;" src="imgs/karamel1.svg">
+</div>
+-->
+            <div id="smags_varianter">
+                <div class="smagsvariant_img karamel">
+                    <img src="imgs/kaffekaramel.png">
+                </div>
+                <div class="blue_background"></div>
+                <div class="smagsvariant_img lakrids">
+                    <img src="imgs/kaffelakrids.png">
+                </div>
+                <div class="smagsvariant_img passion">
+                    <img src="imgs/kaffepassion.png">
+                </div>
+            </div>
+
+            <div style="background-color: #C9ECF5;">
+                <div class="row">
+                    <p class="p-5  col-6 offset-3">Vi har i sammenarbejde med nemlig.com gjort det super nemt, at bestille vores kaffefløde.
+                        Så forkæl dig selv, og få leveret kaffefløde lige til døren!</p>
+                </div>
+                <div class="row pb-5">
+                    <button class="col-6 offset-3 p-2 button">Bestil din kaffefløde</button>
+                </div>
+            </div>
+        </section>
+        <!-- MØD VORES SMAGSVARIANTER SLUT -->
+
+        <!-- KLAR PÅ FLERE NYHEDER START -->
+        <section id="nyheder">
+            <div class="row text-center my-5">
+                <h1>Vind en tur i spa!</h1>
+            </div>
+            <div class="row text-center mt-5  col-6 offset-3">
+                <p>Trænger du til en overnatning på et luksus spahotel, hvor du kan få slappet maks af? Det eneste du skal gøre er, at tilmelde dig via din e-mail!</p>
+            </div>
+
+            <form action="action_page.php">
+
+
+                <div class="container d-flex" style="flex-direction: column;">
+                    <input class="col-6 offset-3 p-3 mb-2" type="text" placeholder="Navn" name="name" required>
+                    <input class="col-6 offset-3 p-3" type="text" placeholder="E-mail" name="mail" required>
+
+                </div>
+                <div class="row mt-5">
+                    <input class="col-6 offset-3 button p-2 mb-5" type="submit" value="Tilmeld">
+                </div>
+            </form>
+        </section>
+
+        <!-- KLAR PÅ FLERE NYHEDER SLUT -->
+
+        <!-- FOOTER START -->
+        <section id="footer">
+            <footer class="row">
+                <p class="p-5 ">Multimedieprojekt 2020 <br>
+                    Digital markedsføring og content
+                    <br>
+                    Katrine Meyer og Michelle Young <br>
+                    Københavns Erhvers Akademi
+                </p>
+            </footer>
+        </section>
+        <!-- FOOTER SLUT -->
 
 
 
 
 
-    </div> <!-- CONTAINER END-->
 
+
+
+
+    </div> <!-- CONTAINER END -->
 
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper.js -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js" integrity="sha384-BOsAfwzjNJHrJ8cZidOg56tcQWfp6y72vEJ8xQ9w6Quywb24iOsW913URv1IS4GD" crossorigin="anonymous"></script>
 
+    <script src="js/gsap.min.js"></script>
+    <script src="js/ScrollTrigger.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js"></script>
+
+    <script src="js/javascript.js"></script>
+
     <!-- Option 2: Separate Popper.js and Bootstrap JS
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.min.js" integrity="sha384-5h4UG+6GOuV9qXh6HqOLwZMY4mnLPraeTrjT5v07o347pj6IkfuoASuGBhfDsp3d" crossorigin="anonymous"></script>
     -->
-</body>
-
-</html>
+</body></html>

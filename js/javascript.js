@@ -29,7 +29,7 @@ gsap.set("#energi_container", {
 
 ScrollTrigger.create({
     trigger: godEnergiContainer,
-    markers: true,
+
     toggleClass: "coloryellow",
     duration: 2,
     start: "top center",
@@ -40,7 +40,7 @@ ScrollTrigger.create({
 
 ScrollTrigger.create({
     trigger: vidsteDuAtSection,
-    markers: true,
+
     toggleClass: "colorbace",
     duration: 2,
     start: "top center",
@@ -84,7 +84,7 @@ gsap.from(diverIOverskud, {
         trigger: "#overskudIHverdagen",
         start: "10% center",
         end: "center center",
-        markers: true,
+
         scrub: true,
     }
 });
@@ -98,7 +98,7 @@ gsap.from(DemDerSkalPoppeUpEnergi, {
         trigger: "#start1",
         start: "10% center",
         end: "center center",
-        markers: true,
+
         scrub: true,
     }
 });
@@ -112,7 +112,7 @@ gsap.from(demDerSkalPoppeUpHverdagspauser, {
         trigger: "#hverdagensPauser",
         start: "10% center",
         end: "center center",
-        markers: true,
+
         scrub: true,
     }
 });
@@ -126,7 +126,7 @@ gsap.from(demDerSkalPoppeUpGodsamvitighed, {
         trigger: "#godSamvittighed",
         start: "10% center",
         end: "center center",
-        markers: true,
+
         scrub: true,
     }
 });
@@ -140,7 +140,7 @@ gsap.from(demDerSkalPoppeUpVidste, {
         trigger: "#vidsteDuAt",
         start: "10% center",
         end: "center center",
-        markers: true,
+
         scrub: true,
     }
 });
@@ -154,7 +154,7 @@ gsap.from(demDerSkalPoppeUpSmag, {
         trigger: "#smagsVarianer",
         start: "10% center",
         end: "center center",
-        markers: true,
+
         scrub: true,
     }
 });
