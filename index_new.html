@@ -13,6 +13,11 @@
     <title>Kaffefløde</title>
 
     <style>
+        .scale {
+            transform: scale(4);
+            transition: 0.5s;
+        }
+
         .coloryellow {
 
 
@@ -77,17 +82,16 @@
             </div>
 
 
-            <div class="row" style=" display: flex;
+            <div class="row mt-5">
+                <div class="col-12" style=" display: flex;
   justify-content: center;
-  align-items: center;">
-                <div>
-                    <p>Overskud i hverdagen</p>
-                </div>
-                <div>
-                    <p>Tager din kaffe op på det niveau du fortjener</p>
-                </div>
-                <div>
-                    <p>Find den gode energi</p>
+  align-items: center; flex-direction: row;">
+                    <p class="m-2 pr-2" style="border-right: 2px solid #7C94FB">Overskud i hverdagen</p>
+
+
+                    <p class="m-2 pr-2" style="border-right: 2px solid #7C94FB">Tager din kaffe op på det niveau du fortjener</p>
+
+                    <p class="m-2">Find den gode energi</p>
                 </div>
                 <!--
                     <p class="p-5">Hvad gør du, for at finde overskud i hverdagen? Eller har du en dårlig vane med, at køre på overtrætheden? Dine tanker er et stort rod, fordi du har en masse erinder at nå. <br> <br>Men alligevel, bruger du dagen foran fjernsynet. Er dette en dårlig samvittighedsfølelse, du kender til? Bare rolig, den kan du nemt komme af med.
@@ -98,7 +102,7 @@
 
             </div>
             <div class="col-12">
-                <video class="mb-5 col-12 p-md-5" id="overskud_video" style="height: 80vh; object-fit: cover;" controls>
+                <video class="mb-5 col-12 p-md-5" id="overskud_video" style="height: 90vh; object-fit: cover;" controls>
                     <source src="videos/cm_video.mp4" type="video/mp4">
                 </video>
             </div>
@@ -122,7 +126,7 @@
 
             </div>
 
-            <div class="row row-cols-md-2 d-md-flex flex-row-reverse" style=" display: flex;
+            <div id="start1" class="row row-cols-md-2 d-md-flex flex-row-reverse popup" style=" display: flex;
   justify-content: center;
   align-items: center;">
                 <div>
@@ -132,7 +136,7 @@
                         Start din dag med vores kaffefløde og mærk den gode energi helt fra start.
                     </p>
                 </div>
-                <div class="video_container" style=" display: flex;
+                <div class="video_container popup" style=" display: flex;
   justify-content: center;
   align-items: center; flex-direction: column;">
                     <video class="col-12 p-md-5" style="height: 80vh; object-fit: cover; " id="god_energi_video" autoplay muted loop>
@@ -204,19 +208,19 @@
             <div class="row row-cols-md-2 mt-5 ">
                 <div class="wrapper" style=" display: flex; justify-content: center; align-items: center; flex-direction: column;">
                     <div class="row offset-3 mb-1">
-                        <div class="infoCirkel pulse"></div>
+                        <div class="infoCirkel fakta1 pulse"></div>
                     </div>
                     <div class="row mb-2" style="margin-right: 155px;">
-                        <div class="infoCirkel pulse delay"></div>
+                        <div class="infoCirkel fakta2 pulse delay"></div>
                     </div>
                     <div>
                         <img class="col-6 offset-3" src="imgs/kaffeneurtral.png">
                     </div>
                     <div class="row offset-3 mb-1">
-                        <div class="infoCirkel pulse"></div>
+                        <div class="infoCirkel fakta3 pulse"></div>
                     </div>
                     <div class="row mb-2" style="margin-right: 155px;">
-                        <div class="infoCirkel pulse delay"></div>
+                        <div class="infoCirkel fakta4 pulse delay"></div>
                     </div>
                 </div>
                 <div>
