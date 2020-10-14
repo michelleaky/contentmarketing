@@ -18,6 +18,8 @@ button,
     border: 3px solid #7C94FB;
     color: #7C94FB;
     background-color: transparent;
+    max-width: 300px;
+    margin: 0 auto;
 }
 
 button:hover {
@@ -76,7 +78,7 @@ p {
 /* SPLASH */
 
 #videoBG {
-/*            position: fixed;*/
+    /*            position: fixed;*/
     z-index: -1;
     max-height: 100vh;
     object-fit: cover;

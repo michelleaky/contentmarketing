@@ -15,27 +15,6 @@ const demDerSkalPoppeUpHverdagspauser = document.querySelector = ("#hverdagensPa
 const demDerSkalPoppeUpGodsamvitighed = document.querySelector = ("#godSamvittighed > div");
 const demDerSkalPoppeUpVidste = document.querySelector = ("#vidsteDuAt > div");
 
-//const faktaboks1 = document.querySelector = ("fakta1");
-//const faktaboks2 = document.querySelector = (".fakta2");
-//const faktaboks3 = document.querySelector = (".fakta3");
-//const faktaboks4 = document.querySelector = (".fakta4");
-//
-//window.addEventListener("load", visStart);
-//
-//function visStart() {
-//    faktaboks1.addEventListener("click", clickFakta1);
-//}
-//
-//
-//
-//function clickFakta1() {
-//    faktaboks1.classList.remove(".pulse");
-//    faktaboks1.classList.add(".scale")
-//    console.log("jeg har klikket på fakaboks1")
-//}
-
-
-
 
 
 
@@ -79,7 +58,19 @@ ScrollTrigger.create({
 //        scub: true,
 //    }
 //})
-
+gsap.to(karamel, {
+    y: -500,
+    x: 10,
+    duration: 2,
+    stagger: 1,
+    scrollTrigger: {
+        trigger: "#smagsprover",
+        start: "center center",
+        end: "center center",
+        markers: true,
+        scrub: true,
+    }
+});
 
 gsap.from(diverIOverskud, {
     opacity: 0,
