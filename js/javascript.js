@@ -58,19 +58,19 @@ ScrollTrigger.create({
 //        scub: true,
 //    }
 //})
-gsap.to(karamel, {
-    y: -500,
-    x: 10,
-    duration: 2,
-    stagger: 1,
-    scrollTrigger: {
-        trigger: "#smagsprover",
-        start: "center center",
-        end: "center center",
-        markers: true,
-        scrub: true,
-    }
-});
+//gsap.to(karamel, {
+//    y: -500,
+//    x: 10,
+//    duration: 2,
+//    stagger: 1,
+//    scrollTrigger: {
+//        trigger: "#smagsprover",
+//        start: "center center",
+//        end: "center center",
+//        markers: true,
+//        scrub: true,
+//    }
+//});
 
 gsap.from(diverIOverskud, {
     opacity: 0,
